@@ -3,8 +3,9 @@ import java.net.Socket;
 
 public class Client {
     public static void main(String[] args) {
-        String serverName = args[0];
-        int port = Integer.parseInt(args[1]);
+
+        String serverName = "127.0.0.1";
+        int port = 9988;
 
         try {
             System.out.println("Connecting to " + serverName + " on port " + port);
