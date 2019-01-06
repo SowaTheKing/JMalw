@@ -33,23 +33,7 @@ public class OSTools {
         return Boolean.TRUE.equals(OS_NAME.toLowerCase().contains("sunos"));
     }
 
-    public int scoreSandbox() {
-        int score = 0;
-        if (isWindows()) {
-            SandboxWindowsDetector sandboxWindowsDetector  = new SandboxWindowsDetector();
 
-            if (sandboxWindowsDetector.isSbiedll_dllPresent())
-                score += 10;
-
-            List<String> processList = getProcessList();
-            for (String process : processList) {
-                if (isSandboxProcess(process)) {
-                    score += 10;
-                }
-            }
-        }
-        return score;
-    }
 
 
     /*
@@ -58,13 +42,7 @@ public class OSTools {
 
      */
 
-    private List<String> getProcessList() {
-        return  ProcessHandle.allProcesses()
-                .map(processHandle -> processHandle.info().command())
-                .filter(Optional::isPresent)
-                .map(Optional::get)
-                .collect(Collectors.toList());
-    }
+
 
     private boolean isSandboxProcess(String processName) {
         return Boolean.TRUE.equals(processName.contains(PROCESSNAME_MUSRVC) ||
