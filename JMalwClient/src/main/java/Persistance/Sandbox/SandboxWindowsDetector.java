@@ -34,6 +34,22 @@ public class SandboxWindowsDetector {
     public static final String SYSTEM32_VBOXTRAY_EXE                = "system32\\vboxtray.exe";
     public static final String SYSTEM32_VBOXCONTROL_EXE             = "system32\\VBoxControl.exe";
 
+    public static final String PROCESS_VBOXSERVICE_EXE              = "vboxservice.exe";
+    public static final String PROCESS_VBOXTRAY_EXE                 = "vboxtray.exe";
+    public static final String PROCESS_VMTOOLSD_EXE                 = "vmtoolsd.exe";
+    public static final String PROCESS_VMARETRAY_EXE                = "vmwaretray.exe";
+    public static final String PROCESS_VMWAREUSER_EXE               = "vmwareuser.exe";
+    public static final String PROCESS_VGAUTHSERVICE_EXE            = "VGAuthService.exe";
+    public static final String PROCESS_VMACTHLP_EXE                 = "vmacthlp.exe";
+    public static final String PROCESS_VMSRVS_EXE                   = "vmsrvc.exe";
+    public static final String PROCESS_VMUSRVC_EXE                  = "vmusrvc.exe";
+    public static final String PROCESS_PRLCC_EXE                    = "prl_cc.exe";
+    public static final String PROCESS_PRLTOOLS_EXE                 = "prl_tools.exe";
+    public static final String PROCESS_XENSERVICE_EXE               = "xenservice.exe";
+    public static final String PROCESS_QEMUGA_EXE                   = "qemu-ga.exe";
+
+
+
 
 
     public boolean isSbiedll_dllPresent() {
