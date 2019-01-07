@@ -14,17 +14,17 @@ public class SandboxWindowsDetector {
 
     public static final String SBIEDLL_DLL_FILENAME = "sbiedll.dll";
 
-    public static final String SYSTEM32_DRIVERS_VBOXMOUSE_SYS = "system32\\drivers\\VBoxMouse.sys";
-    public static final String SYSTEM32_DRIVERS_VBOXGUEST_SYS = "system32\\drivers\\VBoxGuest.sys";
-    public static final String SYSTEM32_DRIVERS_VBOXSF_SYS = "system32\\drivers\\VBoxSF.sys";
-    public static final String SYSTEM32_DRIVERS_VBOXVIDEO_SYS = "system32\\drivers\\VBoxVideo.sys";
-    public static final String SYSTEM32_DRIVERS_VMMOUSE_SYS = "system32\\drivers\\vmmouse.sys";
-    public static final String SYSTEM32_DRIVERS_VMHGFS_SYS = "system32\\drivers\\vmhgfs.sys";
-    public static final String SYSTEM32_DRIVERS_VM3DMP_SYS = "system32\\drivers\\vm3dmp.sys";
-    public static final String SYSTEM32_DRIVERS_VMCI_SYS = "system32\\drivers\\vmci.sys";
-    public static final String SYSTEM32_DRIVERS_VMMEMCTL_SYS = "system32\\drivers\\vmmemctl.sys";
-    public static final String SYSTEM32_DRIVERS_VMRAWDSK_SYS = "system32\\drivers\\vmrawdsk.sys";
-    public static final String SYSTEM32_DRIVERS_VMUSBMOUSE_SYS = "system32\\drivers\\vmusbmouse.sys";
+    private static final String SYSTEM32_DRIVERS_VBOXMOUSE_SYS = "system32\\drivers\\VBoxMouse.sys";
+    private static final String SYSTEM32_DRIVERS_VBOXGUEST_SYS = "system32\\drivers\\VBoxGuest.sys";
+    private static final String SYSTEM32_DRIVERS_VBOXSF_SYS = "system32\\drivers\\VBoxSF.sys";
+    private static final String SYSTEM32_DRIVERS_VBOXVIDEO_SYS = "system32\\drivers\\VBoxVideo.sys";
+    private static final String SYSTEM32_DRIVERS_VMMOUSE_SYS = "system32\\drivers\\vmmouse.sys";
+    private static final String SYSTEM32_DRIVERS_VMHGFS_SYS = "system32\\drivers\\vmhgfs.sys";
+    private static final String SYSTEM32_DRIVERS_VM3DMP_SYS = "system32\\drivers\\vm3dmp.sys";
+    private static final String SYSTEM32_DRIVERS_VMCI_SYS = "system32\\drivers\\vmci.sys";
+    private static final String SYSTEM32_DRIVERS_VMMEMCTL_SYS = "system32\\drivers\\vmmemctl.sys";
+    private static final String SYSTEM32_DRIVERS_VMRAWDSK_SYS = "system32\\drivers\\vmrawdsk.sys";
+    private static final String SYSTEM32_DRIVERS_VMUSBMOUSE_SYS = "system32\\drivers\\vmusbmouse.sys";
 
     public static final String SYSTEM32_VBOXDISP_DLL = "system32\\vboxdisp.dll";
     public static final String SYSTEM32_VBOXHOOK_DLL = "system32\\vboxhook.dll";
