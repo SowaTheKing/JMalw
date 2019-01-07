@@ -1,11 +1,5 @@
 package Persistance;
 
-import Persistance.Sandbox.SandboxWindowsDetector;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
 public class OSTools {
     private static final String OS_NAME = System.getProperty("os.name");
 
@@ -33,20 +27,11 @@ public class OSTools {
         return Boolean.TRUE.equals(OS_NAME.toLowerCase().contains("sunos"));
     }
 
-
-
-
-    /*
-
-    Process: musrvc.exe, boxservice.exe, or vmtoolsd.exe.
-
-     */
-
-
-
     private boolean isSandboxProcess(String processName) {
         return Boolean.TRUE.equals(processName.contains(PROCESSNAME_MUSRVC) ||
                         processName.contains(PROCESSNAME_BOXSERVICE) ||
                         processName.contains(PROCESSNAME_VMTOOLSD));
     }
+
+
 }
