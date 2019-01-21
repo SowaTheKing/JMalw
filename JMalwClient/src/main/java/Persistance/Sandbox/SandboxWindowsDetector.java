@@ -10,9 +10,6 @@ import java.util.stream.Collectors;
             Prawdopodobnie pownienem tutaj uzyc statycznego ENUMA
  */
 public class SandboxWindowsDetector {
-    public static final String PATH_DLL = "C:\\Program Files\\sandboxie\\";
-
-    public static final String SBIEDLL_DLL_FILENAME = "sbiedll.dll";
 
     private static final String SYSTEM32_DRIVERS_VBOXMOUSE_SYS = "system32\\drivers\\VBoxMouse.sys";
     private static final String SYSTEM32_DRIVERS_VBOXGUEST_SYS = "system32\\drivers\\VBoxGuest.sys";
@@ -72,7 +69,7 @@ public class SandboxWindowsDetector {
     }
 
     // I think this is not null-safe, we should compare PROCESS_VBOX... to Process
-    private boolean isSandboxProcess(String process) {
+    public boolean isSandboxProcess(String process) {
         return process.contains(PROCESS_VBOXSERVICE_EXE)
                 || process.contains(PROCESS_VBOXTRAY_EXE)
                 || process.contains(PROCESS_VMTOOLSD_EXE)

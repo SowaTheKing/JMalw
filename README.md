@@ -1,8 +1,8 @@
-Suit Noir
+##Suit Noir
 
-It's party time, let's wear some black hat's!
+###It's party time, let's wear some black hat's!
 
-This project private learning project, im not responsible for any damage you bad-assess will do with this piece of code.
+###This project private learning project, im not responsible for any damage you bad-assess will do with this piece of code.
 
 Quick setup
 
@@ -22,7 +22,7 @@ Server:
 
 
 Client  
-  - Check is persistance ready
+  - Check is persistance ready 
     There gonna be fun in aquiring persistance in JAVA because we ened to escape sandbox, but we can make it
 
 
@@ -39,4 +39,3 @@ Client
   - Replicate keylogger
   - Run keylogger as separate process
   - Persistance keylogger
-  -

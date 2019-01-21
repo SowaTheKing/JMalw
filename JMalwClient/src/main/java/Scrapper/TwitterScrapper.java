@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -31,13 +32,13 @@ public class TwitterScrapper {
 
         if (imagesList.isEmpty()) {
             System.out.println("Nothing found!");
+            return Collections.emptyList();
         }
 
         List<String> dirtyLinks = new ArrayList<>();
         for (HtmlElement element : imagesList) {
             dirtyLinks.add(element.getFirstChild().getFirstChild().asXml());
         }
-
         return cleanUpDirtyLinks(dirtyLinks);
     }
 
